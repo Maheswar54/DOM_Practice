@@ -2,13 +2,26 @@ let pid = document.querySelector("#colorDisplay");
 //let btn = document.querySelector("button");
 let btn = document.querySelector("button");
 let devid = document.querySelector("div");
-btn.addEventListener('click', function() {
-    let randomcolor = Math.floor(Math.random()*16777215).toString(16);
+// btn.addEventListener('click', function() {
+//     let randomcolor = Math.floor(Math.random()*16777215).toString(16);
 
-pid.innerText = "Color Code: #" + randomcolor;
-devid.style.backgroundColor = "#" + randomcolor;
+// pid.innerText = "Color Code: #" + randomcolor;
+// devid.style.backgroundColor = "#" + randomcolor;
 
-});
+// });
+// Inputnchange event
+
+
+let inputField = document.querySelector("#inputField");
+inputField.addEventListener('input', function() { 
+    let heading = document.querySelector("h1");
+     
+   let filteredvalue = this.value.replace(/[^a-zA-Z ]/g, '');
+        heading.innerText = filteredvalue;
+    
+   
+    console.log("Input changed: " + this.value);
+  });
 
 // btns.forEach((btn)=>{
 //     btn.onclick= function (){
@@ -33,6 +46,6 @@ devid.style.backgroundColor = "#" + randomcolor;
         this.style.color = "white";
     }); */
 //});
-console.log(btns);
+//console.log(btns);
 
 
