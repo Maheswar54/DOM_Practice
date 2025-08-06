@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    width:50%;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: hsl(191, 89%, 69%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+}
+#addTodoButton {
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addTodoButton:hover {
+    background-color: darkgreen;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
